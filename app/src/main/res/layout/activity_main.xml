@@ -41,39 +41,85 @@
         app:layout_constraintTop_toBottomOf="@+id/banner" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/car\"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/star"
         app:layout_constraintTop_toBottomOf="@+id/logo"
         app:srcCompat="@drawable/inboxbutton" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/star"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginLeft="24"
         android:layout_marginRight="24"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintBottom_toBottomOf="@+id/car\"
+        app:layout_constraintEnd_toStartOf="@+id/car\"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/camera"
+        app:layout_constraintTop_toTopOf="@+id/car\"
         app:srcCompat="@drawable/favoritebutton" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/camera"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintBottom_toBottomOf="@+id/star"
+        app:layout_constraintEnd_toStartOf="@+id/star"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/star"
         app:srcCompat="@drawable/camerabutton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/ddd"
+        android:layout_width="95dp"
+        android:layout_height="104dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/camera"
+        app:srcCompat="@drawable/dataimage" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="101dp"
+        android:layout_height="102dp"
+        android:adjustViewBounds="false"
+        android:baselineAlignBottom="false"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/imagesimage"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="352dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="109dp"
+        android:layout_height="112dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/codeimage"
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="91dp"
+        android:layout_height="103dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/ddd"
+        app:srcCompat="@drawable/videosimage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
